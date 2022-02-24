@@ -1,0 +1,10 @@
+C:\Users\yashp\source\repos\ContactManagement\ContactHost\bin\Debug\ContactHost.exe.config
+C:\Users\yashp\source\repos\ContactManagement\ContactHost\bin\Debug\ContactHost.exe
+C:\Users\yashp\source\repos\ContactManagement\ContactHost\bin\Debug\ContactHost.pdb
+C:\Users\yashp\source\repos\ContactManagement\ContactHost\obj\Debug\ContactHost.csproj.AssemblyReference.cache
+C:\Users\yashp\source\repos\ContactManagement\ContactHost\obj\Debug\ContactHost.Form1.resources
+C:\Users\yashp\source\repos\ContactManagement\ContactHost\obj\Debug\ContactHost.Properties.Resources.resources
+C:\Users\yashp\source\repos\ContactManagement\ContactHost\obj\Debug\ContactHost.csproj.GenerateResource.cache
+C:\Users\yashp\source\repos\ContactManagement\ContactHost\obj\Debug\ContactHost.csproj.CoreCompileInputs.cache
+C:\Users\yashp\source\repos\ContactManagement\ContactHost\obj\Debug\ContactHost.exe
+C:\Users\yashp\source\repos\ContactManagement\ContactHost\obj\Debug\ContactHost.pdb
