@@ -45,7 +45,7 @@
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand"><center>Contact Manager</center></a>
+                        <a class="navbar-brand"><center>Contact Management</center></a>
                     </div>
 
                 </div>
@@ -99,7 +99,7 @@
                                     <asp:Label ID="Label1" runat="server"></asp:Label>
                                 </div>
                                 <div>
-                                    <a href="#">Already Have an Account</a></div>
+                                    <a href="Login.aspx">Already Have an Account</a></div>
 
                             </div>
                         </div>

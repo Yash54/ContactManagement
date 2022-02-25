@@ -13,27 +13,24 @@ namespace WebClient.User
         {
 
         }
-
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void ButtonLogin_Click(object sender, EventArgs e)
         {
             LoginReference.LoginClient lc = new LoginReference.LoginClient();
-            string res = lc.Login(Label1.Text, Label2.Text);
+            string res = lc.Login(TextBox1.Text, TextBox2.Text);
             if (res == "Login Success")
             {
-                Label3.Text = "Login Successful.";
-                //Response.Redirect("../home.aspx");
+                Response.Redirect("Home.aspx");
             }
 
-            else if(res == "Invalid Password")
+            else if (res == "Invalid Password")
             {
-                Label3.Text = "Invalid Password";
+                Response.Write("<script>alert('Invalid Password')</script>");
             }
 
             else if (res == "User not exist please signup")
             {
-                Label3.Text = "User not exist please signup";
+                Response.Write("<script>alert('User not exist please signup')</script>");
             }
-
         }
     }
 }

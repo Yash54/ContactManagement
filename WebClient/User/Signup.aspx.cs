@@ -14,12 +14,6 @@ namespace WebClient.User
         {
 
         }
-
-        //protected void Button1_Click(object sender, EventArgs e)
-        //{
-            
-        //}
-
         protected void ButtonSignup_Click(object sender, EventArgs e)
         {
             SignupReference.SignupClient sc = new SignupReference.SignupClient();
