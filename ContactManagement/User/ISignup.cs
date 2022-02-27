@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using System.ServiceModel;
+using System.Runtime.Serialization;
 
 namespace ContactManagement.User
 {
@@ -25,7 +25,7 @@ namespace ContactManagement.User
         int mobileno = 1234567890;
 
         public user() { }
-        public user(string uname, string pass, string email, int mobile)
+        public user(string uname,string pass,string email,int mobile)
         {
             this.username = uname;
             this.password = pass;
@@ -58,4 +58,5 @@ namespace ContactManagement.User
             set { mobileno = value; }
         }
     }
+
 }

@@ -19,7 +19,7 @@ namespace ContactHost
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            label1.Text = "Services is Running.";
+            label1.Text = "Service is Running.";
         }
     }
 }

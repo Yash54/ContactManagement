@@ -13,6 +13,7 @@ namespace WebClient.User
         {
 
         }
+
         protected void ButtonLogin_Click(object sender, EventArgs e)
         {
             LoginReference.LoginClient lc = new LoginReference.LoginClient();
@@ -20,6 +21,7 @@ namespace WebClient.User
             if (res == "Login Success")
             {
                 Response.Redirect("Home.aspx");
+                //Response.Write("<script>alert('Login Successful')</script>");
             }
 
             else if (res == "Invalid Password")

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ContactManagement.User
 {
-    class LoginService : ILogin
+    public class LoginService :ILogin
     {
         Model1 m1 = new Model1();
         public string Login(string uname, string pass)
         {
-            user u1 = m1.Users.Where(se => se.Username == uname || se.Email == uname).FirstOrDefault<user>();
+            user u1 = m1.users.Where(se => se.Username == uname || se.Email == uname).FirstOrDefault<user>();
             if (u1 != null)
             {
                 if (u1.Password == pass && u1.Username == uname)
