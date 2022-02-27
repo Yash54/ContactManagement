@@ -8,9 +8,11 @@ using System.Threading.Tasks;
 namespace ContactManagement.User
 {
     [ServiceContract]
-    interface ILogin
+    public interface ILogin
     {
         [OperationContract]
         string Login(string uname, string pass);
     }
+    
+    
 }

@@ -7,13 +7,13 @@ namespace ContactManagement.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class user : IMigrationMetadata
+    public sealed partial class forgots : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(user));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(forgots));
         
         string IMigrationMetadata.Id
         {
-            get { return "202202231147183_user"; }
+            get { return "202202270545118_forgots"; }
         }
         
         string IMigrationMetadata.Source

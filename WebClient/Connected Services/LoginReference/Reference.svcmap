@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c8dcffa3-b506-43ea-b95b-0218e560c230" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2cd35a84-a422-42ab-b9d5-a893b6347e88" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,9 +22,9 @@
     <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/ContactManagement/LoginService/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="af13051d-0487-429e-90e6-d8bfce6234e0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ContactManagement/LoginService/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="c095659a-caa2-4e64-9dca-982ba83f1366" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ContactManagement/LoginService/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="f92ee973-b5db-49a1-9660-6a6eb3046ac0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ContactManagement/LoginService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="5d860629-d937-4903-937c-db8203b840a8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ContactManagement/LoginService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="1a0fee49-24da-4942-aca7-fd02a74a23f5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ContactManagement/LoginService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="372887b7-ceef-4cf9-a2dd-212434bf1987" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/ContactManagement/LoginService/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
