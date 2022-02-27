@@ -27,11 +27,13 @@ namespace WebClient.User
                 bool res = sc.Signup(u);
                 if (res)
                 {
-                    Label1.Text = "SignUp Successful";
+                    //Label1.Text = "SignUp Successful";
+                    Response.Redirect("Login.aspx");
                 }
                 else
                 {
-                    Label1.Text = "User Already Exist";
+                    //Label1.Text = "User Already Exist";
+                    Response.Write("<script>alert('User Already Exist')</script>");
                 }
             }
         }

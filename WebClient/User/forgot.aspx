@@ -4,18 +4,82 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Forget</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        .navbar-header ,.navbar-brand {
+            width: 100%;
+            text-align: center;
+            color: orange;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .container-fluid
+        {
+            margin:15px
+        }
+
+        .navbar-inverse {
+        background-color: #dff0d8;
+        border-color: #ffffff;
+        }
+
+        .navbar-inverse .navbar-brand {
+            color: #000000;
+            
+        }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form2" runat="server">
         <div>
-            <asp:Label ID="email_l" runat="server" Text="Email: "></asp:Label>
-            <asp:TextBox ID="email" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ControlToValidate="email" ErrorMessage="*" ForeColor="#FF6699" ToolTip="Please Enter Email"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="EmailValidator" runat="server" ControlToValidate="email" ErrorMessage="Please enter a valid email" ForeColor="Red" ToolTip="email must be of form xyz@abc.com" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a href="../Intro.aspx" class="navbar-brand"><center>FreshCall</center></a>
+                    </div>
+
+                </div>
+            </nav>
             <br />
             <br />
-            <asp:Button ID="sendbutton" runat="server" OnClick="sendbutton_Click" Text="Send" />
+            <br />
+            <div class="container-fluid text-center">
+                <div class="row content">
+                    <div class="col-md-4"></div>
+                    <div class="col-sm-4 text-center">
+                        <br />
+                        <div class="panel panel-success">
+                            <div class="panel-heading" style="padding:1px"><h3>Forgot Password</h3></div>
+                                
+                            <div class="panel-body">
+                                <div>
+                                    <div class="form-group text-left">
+                                        <label>Email:</label>
+                                        <asp:TextBox ID="email" runat="server" CssClass="form-control" placeholder="Enter Your Email" required="required"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <asp:Button ID="sendbutton" CssClass="btn btn-success btn-lg" runat="server" Text="Send" OnClick="sendbutton_Click" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:Label ID="Label1" runat="server"></asp:Label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+
         </div>
     </form>
 </body>

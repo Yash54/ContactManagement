@@ -8,7 +8,7 @@
     <style>
         .background{
             background-image : url("Introbg2.jpg");
-            height:680px;
+            height:775px;
             background-size:cover;
 
         }
@@ -26,7 +26,7 @@
             width:500px;
             border:1px solid #ffffff;
             background-color:#daefe6;
-            margin-left: 28%;
+            margin-left: 35%;
             padding:20px;
             color:#000000;
             border-radius : 20px;
@@ -47,6 +47,7 @@
             width:400px;
             text-align:center;
             padding-left:50px;
+            font-size: 18px;
         }
         #Button1{
             color:white;

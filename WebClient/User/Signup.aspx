@@ -45,7 +45,7 @@
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand"><center>Contact Management</center></a>
+                        <a href="../Intro.aspx" class="navbar-brand"><center>FreshCall</center></a>
                     </div>
 
                 </div>
@@ -96,8 +96,7 @@
                                 <div class="form-group">
                                     <asp:Button ID="ButtonSignup" CssClass="btn btn-success btn-lg" runat="server" Text="SignUp" OnClick="ButtonSignup_Click" />
                                 &nbsp;
-                                    <asp:Label ID="Label1" runat="server"></asp:Label>
-                                </div>
+                                    </div>
                                 <div>
                                     <a href="Login.aspx">Already Have an Account</a></div>
 

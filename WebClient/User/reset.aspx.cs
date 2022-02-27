@@ -18,9 +18,9 @@ namespace WebClient.User
         {
             string quid = Request.QueryString["Uid"];
             ResetReference.ResetClient rc = new ResetReference.ResetClient();
-            if (password.Text == confirmpassword.Text)
+            if (passwd.Text == conpasswd.Text)
             {
-                bool res = rc.Reset(quid, password.Text);
+                bool res = rc.Reset(quid, passwd.Text);
                 if (res)
                 {
                     Response.Redirect("login.aspx");

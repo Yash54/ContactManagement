@@ -5,6 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
@@ -42,7 +45,7 @@
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand"><center>Contact Management</center></a>
+                        <a href="../Intro.aspx" class="navbar-brand"><center>FreshCall</center></a>
                     </div>
 
                 </div>
@@ -63,7 +66,7 @@
                                 <div>
                                     <div class="form-group text-left">
                                         <label>Username:</label>
-                                        <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" placeholder="Enter Your Username" required="required"></asp:TextBox>
+                                        <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" placeholder="Enter Your Username" required></asp:TextBox>
                                         
                                     </div>
                                     <div class="form-group text-left">
@@ -77,6 +80,9 @@
 
                                 <div class="form-group">
                                     <asp:Button ID="ButtonLogin" CssClass="btn btn-success btn-lg" runat="server" Text="LOGIN" OnClick="ButtonLogin_Click" />
+                                </div>
+                                <div>
+                                    <a href="forgot.aspx">Forgot Password ?</a>
                                 </div>
                                 <div>
                                     <a href="Signup.aspx">Create a New Account</a>

@@ -27,8 +27,8 @@ namespace ContactManagement.User
                     m1.SaveChanges();
 
                     string tomail = email;
-                    string mailbody = "Hi, Click this link to reset you password https://localhost:44313/user/reset.aspx?Uid=" + myGUID;
-                    MailMessage Resmail = new MailMessage("fineartgallery06@gmail.com", tomail);
+                    string mailbody = "Hi, Click this link to reset you password https://localhost:44353/user/reset.aspx?Uid=" + myGUID;
+                    MailMessage Resmail = new MailMessage("FreshCall.in@gmail.com", tomail);
                     Resmail.Body = mailbody;
                     Resmail.IsBodyHtml = true;
                     Resmail.Subject = "Reset Password";
@@ -38,8 +38,8 @@ namespace ContactManagement.User
                     SMTP.UseDefaultCredentials = false;
                     SMTP.Credentials = new NetworkCredential()
                     {
-                        UserName = "fineartgallery06@gmail.com",
-                        Password = "Artgallery#1221"
+                        UserName = "FreshCall.in@gmail.com",
+                        Password = "FreshCall@123"
                     };
                     SMTP.EnableSsl = true;
                     SMTP.Send(Resmail);

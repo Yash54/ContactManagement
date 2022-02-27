@@ -16,5 +16,14 @@ namespace WebClient.User
             //Alert.show(email.Text);
             //Alert.show(fc.Forgot(email.Text));
         }
+
+        protected void sendbutton_Click(object sender, EventArgs e)
+        {
+            ForgotReference.ForgotClient fc = new ForgotReference.ForgotClient();
+            string f = fc.Forgot(email.Text);
+            Label1.Text = f;
+            //Response.Write("<script>alert(f)</script>");
+            //Alert.show(fc.Forgot(email.Text));
+        }
     }
 }

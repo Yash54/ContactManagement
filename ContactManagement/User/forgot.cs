@@ -11,6 +11,6 @@ namespace ContactManagement.User
         public int Id { get; set; }
         public string Uid { get; set; }
         public string Email { get; set; }
-        public Nullable<System.DateTime> ReqDateTime { get; set; }
+        public DateTime? ReqDateTime { get; set; }
     }
 }
