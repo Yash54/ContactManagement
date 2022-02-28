@@ -63,7 +63,7 @@
                                 <div>
                                     <div class="form-group text-left">
                                         <label>Password:</label>
-                                        <asp:TextBox ID="passwd" runat="server" CssClass="form-control" placeholder="Enter Your Username" required="required"></asp:TextBox>
+                                        <asp:TextBox ID="passwd" runat="server" TextMode="Password" CssClass="form-control" placeholder="Enter Your Username" required="required"></asp:TextBox>
                                     </div>
                                     <div class="form-group text-left">
                                         <label>Confirm Password:</label>
