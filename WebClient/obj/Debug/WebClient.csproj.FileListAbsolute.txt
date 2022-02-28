@@ -116,3 +116,10 @@ C:\Users\yashp\source\repos\ContactManagement\WebClient\obj\Debug\WebClient.cspr
 C:\Users\yashp\source\repos\ContactManagement\WebClient\obj\Debug\WebClient.csproj.CopyComplete
 C:\Users\yashp\source\repos\ContactManagement\WebClient\obj\Debug\WebClient.dll
 C:\Users\yashp\source\repos\ContactManagement\WebClient\obj\Debug\WebClient.pdb
+C:\Users\yashp\source\repos\ContactManagement\WebClient\bin\ContactManagement.dll
+C:\Users\yashp\source\repos\ContactManagement\WebClient\bin\EntityFramework.dll
+C:\Users\yashp\source\repos\ContactManagement\WebClient\bin\EntityFramework.SqlServer.dll
+C:\Users\yashp\source\repos\ContactManagement\WebClient\bin\ContactManagement.pdb
+C:\Users\yashp\source\repos\ContactManagement\WebClient\bin\ContactManagement.dll.config
+C:\Users\yashp\source\repos\ContactManagement\WebClient\bin\EntityFramework.xml
+C:\Users\yashp\source\repos\ContactManagement\WebClient\bin\EntityFramework.SqlServer.xml

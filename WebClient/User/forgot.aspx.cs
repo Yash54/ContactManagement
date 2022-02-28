@@ -21,8 +21,7 @@ namespace WebClient.User
         {
             ForgotReference.ForgotClient fc = new ForgotReference.ForgotClient();
             string f = fc.Forgot(email.Text);
-            Label1.Text = f;
-            //Response.Write("<script>alert(f)</script>");
+            Response.Write("<script language='javascript'>alert('" + f + " ');<" + "/script>");
             //Alert.show(fc.Forgot(email.Text));
         }
     }
