@@ -23,6 +23,7 @@ namespace ContactManagement
 
         public virtual DbSet<user> users { get; set; }
         public virtual DbSet<User.forgot> forgots { get; set; }
+        public virtual DbSet<User.contact> contact { get; set; }
     }
 
     //public class MyEntity

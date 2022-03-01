@@ -43,3 +43,4 @@ C:\Users\luvpa\source\repos\ContactManagement_temp\ContactManagement\obj\Debug\C
 C:\Users\luvpa\source\repos\ContactManagement_temp\ContactManagement\obj\Debug\ContactManagement.csproj.CopyComplete
 C:\Users\luvpa\source\repos\ContactManagement_temp\ContactManagement\obj\Debug\ContactManagement.dll
 C:\Users\luvpa\source\repos\ContactManagement_temp\ContactManagement\obj\Debug\ContactManagement.pdb
+C:\Users\yashp\source\repos\ContactManagement\ContactManagement\obj\Debug\ContactManagement.Migrations.contact.resources

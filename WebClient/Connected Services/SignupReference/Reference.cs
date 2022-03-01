@@ -9,112 +9,17 @@
 //------------------------------------------------------------------------------
 
 namespace WebClient.SignupReference {
-    using System.Runtime.Serialization;
-    using System;
     
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="user", Namespace="http://schemas.datacontract.org/2004/07/ContactManagement.User")]
-    [System.SerializableAttribute()]
-    public partial class user : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string EmailField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int MobilenoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PasswordField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UsernameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Email {
-            get {
-                return this.EmailField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
-                    this.EmailField = value;
-                    this.RaisePropertyChanged("Email");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Mobileno {
-            get {
-                return this.MobilenoField;
-            }
-            set {
-                if ((this.MobilenoField.Equals(value) != true)) {
-                    this.MobilenoField = value;
-                    this.RaisePropertyChanged("Mobileno");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Password {
-            get {
-                return this.PasswordField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
-                    this.PasswordField = value;
-                    this.RaisePropertyChanged("Password");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Username {
-            get {
-                return this.UsernameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UsernameField, value) != true)) {
-                    this.UsernameField = value;
-                    this.RaisePropertyChanged("Username");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="SignupReference.ISignup")]
     public interface ISignup {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISignup/Signup", ReplyAction="http://tempuri.org/ISignup/SignupResponse")]
-        bool Signup(WebClient.SignupReference.user u);
+        bool Signup(ContactManagement.User.user u);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISignup/Signup", ReplyAction="http://tempuri.org/ISignup/SignupResponse")]
-        System.Threading.Tasks.Task<bool> SignupAsync(WebClient.SignupReference.user u);
+        System.Threading.Tasks.Task<bool> SignupAsync(ContactManagement.User.user u);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -144,11 +49,11 @@ namespace WebClient.SignupReference {
                 base(binding, remoteAddress) {
         }
         
-        public bool Signup(WebClient.SignupReference.user u) {
+        public bool Signup(ContactManagement.User.user u) {
             return base.Channel.Signup(u);
         }
         
-        public System.Threading.Tasks.Task<bool> SignupAsync(WebClient.SignupReference.user u) {
+        public System.Threading.Tasks.Task<bool> SignupAsync(ContactManagement.User.user u) {
             return base.Channel.SignupAsync(u);
         }
     }

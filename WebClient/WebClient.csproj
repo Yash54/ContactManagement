@@ -76,6 +76,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\ContactReference\ContactManagement.User.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ContactReference\service.wsdl" />
+    <None Include="Connected Services\ContactReference\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ContactReference\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\ForgotReference\service.wsdl" />
     <None Include="Connected Services\ForgotReference\service.xsd">
       <SubType>Designer</SubType>
@@ -121,6 +131,14 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\ContactReference\configuration91.svcinfo" />
+    <None Include="Connected Services\ContactReference\configuration.svcinfo" />
+    <None Include="Connected Services\ContactReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Contacts\AddContact.aspx" />
+    <Content Include="Contacts\ContactList.aspx" />
     <Content Include="User\AboutUs.aspx" />
     <Content Include="User\AboutUs.css" />
     <Content Include="User\Home.aspx" />
@@ -134,6 +152,25 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\ContactReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts\AddContact.aspx.cs">
+      <DependentUpon>AddContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts\AddContact.aspx.designer.cs">
+      <DependentUpon>AddContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts\ContactList.aspx.cs">
+      <DependentUpon>ContactList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts\ContactList.aspx.designer.cs">
+      <DependentUpon>ContactList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\AboutUs.aspx.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -250,14 +287,13 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ContactReference\" />
     <WCFMetadataStorage Include="Connected Services\ForgotReference\" />
     <WCFMetadataStorage Include="Connected Services\LoginReference\" />
     <WCFMetadataStorage Include="Connected Services\ResetReference\" />
     <WCFMetadataStorage Include="Connected Services\SignupReference\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Contacts\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ContactManagement\ContactManagement.csproj">
       <Project>{B74D1B81-4DD3-407C-979E-2783DD0D7E50}</Project>
