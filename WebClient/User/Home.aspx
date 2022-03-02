@@ -137,7 +137,7 @@
                             <h4>Edit Contacts</h4>
                         </div>
                         <div class="servicetext">
-                            <h4>In case of any error in contact details,changes can be made in your contact list.</h4>
+                            <h4>In case of error in contact details,changes can be made in contact list.</h4>
                         </div>
                     </div>
                     <div class="infobox">

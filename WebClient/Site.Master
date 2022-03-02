@@ -50,13 +50,14 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                             <li><a href="../User/Dashboard.aspx">Dashboard</a></li>
-                            <li><a href="../Contacts/AddContact.aspx">Contacts</a></li>
+                            <li><a href="../Contacts/ContactList.aspx">Contacts</a></li>
                             <li><a href="#">Groups</a></li>
                             <li><a href="../User/AboutUs.aspx">About Us</a></li>
                         </ul>
                         
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> <asp:Label ID="lblUser" runat="server" Text=""></asp:Label> </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user">&nbsp<asp:Label runat="server" ID="Uname">123</asp:Label></span> <asp:Label ID="lblUser" runat="server" Text=""></asp:Label> </a></li>
+                            <%--<li><asp:Label runat="server">123</asp:Label></li>--%>
                             <li><a href="../User/Logout.aspx"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Logout</a></li>
                         </ul>
                     </div>

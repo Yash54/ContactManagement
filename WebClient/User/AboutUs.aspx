@@ -9,7 +9,7 @@
     <div class="bg">
         <div class="container p-5">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-5">
                     <div class="card h-100 shadow-sm">
                         <div class="text-center">
                             <div class="img-hover-zoom img-hover-zoom--colorize">
@@ -36,8 +36,9 @@
                     </div>
                 </div>
 
+                <div class="col-sm-2"></div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-5">
                     <div class="card h-100 shadow-sm">
                         <div class="text-center">
                             <div class="img-hover-zoom img-hover-zoom--colorize">

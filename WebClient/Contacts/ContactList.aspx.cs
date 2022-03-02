@@ -13,5 +13,10 @@ namespace WebClient.Contacts
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Contacts/AddContact.aspx");
+        }
     }
 }
