@@ -13,7 +13,12 @@ namespace WebClient
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["username"] != null)
+            {
+                string uname = Session["username"].ToString();
+                Uname.Text = uname;
+            }
+            
 
         }
     }

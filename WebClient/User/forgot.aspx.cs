@@ -21,8 +21,20 @@ namespace WebClient.User
         {
             ForgotReference.ForgotClient fc = new ForgotReference.ForgotClient();
             string f = fc.Forgot(email.Text);
-            Response.Write("<script language='javascript'>alert('" + f + " ');<" + "/script>");
-            //Alert.show(fc.Forgot(email.Text));
+
+            string url = "/User/Login.aspx";
+            string script = "window.onload = function(){ alert('";
+            script += f;
+            script += "');";
+            script += "window.location = '";
+            script += url;
+            script += "'; }";
+            ClientScript.RegisterStartupScript(this.GetType(), "Redirect", script, true);
+
+
+
+            //Response.Write("<script language='javascript'>alert('" + f + " ');<" + "/script>");
+            //Response.Redirect("/User/Login.aspx");
         }
     }
 }

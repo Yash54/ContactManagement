@@ -23,7 +23,8 @@ namespace WebClient.User
                 bool res = rc.Reset(quid, passwd.Text);
                 if (res)
                 {
-                    Response.Redirect("login.aspx");
+                    Response.Write("<script language='javascript'>alert('Password Reset Successfully. Now Go to Previous Window.');<" + "/script>");
+                    //Response.Redirect("login.aspx");
                 }
                 //Alert.show("Request Not found Please Try Again");
             }

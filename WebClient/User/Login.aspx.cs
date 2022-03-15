@@ -11,7 +11,10 @@ namespace WebClient.User
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["username"] != null)
+            {
+                Response.Redirect("/User/Home.aspx");
+            }
         }
 
         protected void ButtonLogin_Click(object sender, EventArgs e)
@@ -20,7 +23,8 @@ namespace WebClient.User
             string res = lc.Login(TextBox1.Text, TextBox2.Text);
             if (res == "Login Success")
             {
-                Response.Redirect("Home.aspx");
+                Session["username"] = TextBox1.Text;
+                Response.Redirect("/User/Home.aspx");
                 //Response.Write("<script>alert('Login Successful')</script>");
             }
 

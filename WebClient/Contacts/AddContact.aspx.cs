@@ -12,7 +12,11 @@ namespace WebClient.Contacts
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["username"] == null)
+            {
+                Response.Write("<script>alert('You must be Login first.')</script>");
+                Response.Redirect("/User/Login.aspx");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -27,9 +31,11 @@ namespace WebClient.Contacts
             c.Firstname = TextBox1.Text;
             c.Lastname = TextBox2.Text;
             c.Email = TextBox3.Text;
-            c.Mobileno = int.Parse(TextBox5.Text);
+            c.Mobileno = TextBox5.Text;
             c.Label = DropDownList2.SelectedItem.Text;
             c.ContactType = DropDownList1.SelectedItem.Text;
+            if(Session["username"] != null)
+                c.Username = Session["username"].ToString();
             bool res = sc.Contact(c);
             if (res)
             {

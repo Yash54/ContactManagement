@@ -22,10 +22,10 @@ namespace ContactManagement.User
         string username = "user1";
         string password = "user1@123";
         string email = "user1@gmail.com";
-        int mobileno = 1234567890;
+        string mobileno = "1234567890";
 
         public user() { }
-        public user(string uname,string pass,string email,int mobile)
+        public user(string uname,string pass,string email, string mobile)
         {
             this.username = uname;
             this.password = pass;
@@ -52,7 +52,7 @@ namespace ContactManagement.User
             set { email = value; }
         }
         [DataMember]
-        public int Mobileno
+        public string Mobileno
         {
             get { return mobileno; }
             set { mobileno = value; }

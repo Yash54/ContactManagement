@@ -11,7 +11,11 @@ namespace WebClient
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["username"] == null)
+            {
+                Response.Write("<script>alert('You must be Login first.')</script>");
+                Response.Redirect("/User/Login.aspx");
+            }
         }
     }
 }

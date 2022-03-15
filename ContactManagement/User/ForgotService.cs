@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Azure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -43,8 +44,8 @@ namespace ContactManagement.User
                     };
                     SMTP.EnableSsl = true;
                     SMTP.Send(Resmail);
-                    return "Email Sent to reset password";
-                    //Response.Redirect("login.aspx");
+                    return "Email Sent to reset password. Kindly Check your Email.";
+                    //Response.Redirect("/WebClient/User/login.aspx");
                 }
                 catch (Exception)
                 {

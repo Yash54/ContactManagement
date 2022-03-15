@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="form-group text-left">
                                     <label>Mobile No.:</label>
-                                    <asp:TextBox ID="TextBox5" runat="server" TextMode="Number" CssClass="form-control" placeholder="Enter Your Mobile Number" required="required"></asp:TextBox>
+                                    <asp:TextBox ID="TextBox5" runat="server" TextMode="SingleLine" CssClass="form-control" placeholder="Enter Your Mobile Number" required="required"></asp:TextBox>
                                 </div>
                                 <div class="form-group text-left">
                                     <label>Email:</label>

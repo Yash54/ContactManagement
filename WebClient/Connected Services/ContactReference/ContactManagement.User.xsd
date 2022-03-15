@@ -8,6 +8,7 @@
       <xs:element minOccurs="0" name="Label" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Mobileno" type="xs:int" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="contact" nillable="true" type="tns:contact" />

@@ -3,5 +3,12 @@
     <title>Dashboard</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Welcome To Dashboard.</h1>
+    
+    <asp:Label ID="Label1" runat="server" Text="Total Contact"></asp:Label>
+&nbsp;:&nbsp;
+    <asp:Label ID="Label2" runat="server"></asp:Label>
+    <br />
+    <br />
+&nbsp;
+    
 </asp:Content>

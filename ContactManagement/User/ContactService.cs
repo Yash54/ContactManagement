@@ -12,7 +12,7 @@ namespace ContactManagement.User
         Model1 m1 = new Model1();
         public bool Contact(contact c)
         {
-            if (m1.contact.Where(se => se.Email == c.Email || se.Mobileno == c.Mobileno).FirstOrDefault<contact>() != null)
+            if (m1.contact.Where(se => (se.Email == c.Email || se.Mobileno == c.Mobileno) && se.Username == c.Username).FirstOrDefault<contact>() != null)
             {
                 return false;
             }

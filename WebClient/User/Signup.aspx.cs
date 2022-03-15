@@ -22,7 +22,7 @@ namespace WebClient.User
             u.Email = email.Text;
             u.Username = uname.Text;
             u.Password = passwd.Text;
-            u.Mobileno = int.Parse(mobileno.Text);
+            u.Mobileno = mobileno.Text;
             if (passwd.Text == repasswd.Text)
             {
                 bool res = sc.Signup(u);
