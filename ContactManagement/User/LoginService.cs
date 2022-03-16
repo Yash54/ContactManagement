@@ -16,7 +16,10 @@ namespace ContactManagement.User
             {
                 if (u1.Password == pass && u1.Username == uname)
                 {
-                    return "Login Success";
+                    IEnumerable<contact> li = m1.contact.Where(c => c.Username == uname);
+                    string sz = li.Count().ToString();
+                    return sz;
+                    //return "Login Success";
                 }
                 return "Invalid Password";
             }

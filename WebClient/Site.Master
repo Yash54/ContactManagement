@@ -54,8 +54,7 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                             <li><a href="../User/Dashboard.aspx">Dashboard</a></li>
-                            <li><a href="../Contacts/ContactList.aspx">Contacts</a></li>
-                            <li><a href="#">Groups</a></li>
+                            <li><a href="../Contacts/ContactList.aspx">Contact List</a></li>
                             <li><a href="../User/AboutUs.aspx">About Us</a></li>
                         </ul>
                         

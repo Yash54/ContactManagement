@@ -5,8 +5,9 @@
     <link href="AboutUs.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-    <div class="bg">
+    
+    
+    <div class="background">
         <div class="container p-5">
             <div class="row">
                 <div class="col-sm-5">

@@ -26,25 +26,20 @@ namespace WebClient.User
                 ClientScript.RegisterStartupScript(this.GetType(), "Redirect", script, true);
             }
 
+            Label1.Text = Session["contact"].ToString();
 
-            display1();
+            //display1();
         }
 
-        private void display1()
-        {
-            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=ContactManagement;Integrated Security=True");
-            con.Open();
-            string uname = Session["username"].ToString();
-            //Label2.Text = uname;
-            using (SqlCommand cmd = new SqlCommand("select count(mobileno) from contacts where username LIKE @uname", con))
-            {
-                cmd.Parameters.Add(new SqlParameter("Name", uname));
-                Label2.Text = Convert.ToString(cmd.ExecuteScalar());
-                
-            }
-            //cmd.Parameters.AddWithValue("@username", Label2.Text.Trim());
-            con.Close();
+        //private void display1()
+        //{
+        //    SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=ContactManagement;Integrated Security=True");
+        //    con.Open();
+        //    SqlCommand cmd = new SqlCommand("SELECT COUNT([Mobileno]) FROM[contacts] WHERE([Username] = @Username)", con);
+        //    cmd.Parameters.AddWithValue("@CreatedBy", Label2.Text.Trim());
+        //    Label2.Text = Convert.ToString(cmd.ExecuteScalar());
+        //    con.Close();
 
-        }
+        //}
     }
 }
