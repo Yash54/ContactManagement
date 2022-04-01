@@ -26,7 +26,7 @@
 
        .background{
             background-image : url("../Introbg2.jpg");
-            height:610px;
+            height:690px;
             background-size:cover;
 
        }

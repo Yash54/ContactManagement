@@ -21,12 +21,6 @@ namespace WebClient.User
         {
             LoginReference.LoginClient lc = new LoginReference.LoginClient();
             string res = lc.Login(TextBox1.Text, TextBox2.Text);
-            //if (res == "Login Success")
-            //{
-            //    Session["username"] = TextBox1.Text;
-            //    Response.Redirect("/User/Home.aspx");
-            //    //Response.Write("<script>alert('Login Successful')</script>");
-            //}
 
             if (res == "Invalid Password")
             {
