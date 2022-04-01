@@ -1,7 +1,5 @@
 # Smart Contact Manager
 
-[Project Demo]()
-
 The Smart Contact Manager is a web application for users to minimize their day to day contact management. The system works around only on End Users. Users can Register and login to the system. Users can create, update, view and delete the contacts. System checks all the corner cases for authentication, authorization of the users, validation of input data, duplication of data and gives appropriate error response messages
 according to the situation.
 
