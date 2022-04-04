@@ -13,16 +13,54 @@
   <wsdl:message name="IContact_Contact_OutputMessage">
     <wsdl:part name="parameters" element="tns:ContactResponse" />
   </wsdl:message>
+  <wsdl:message name="IContact_Removecontact_InputMessage">
+    <wsdl:part name="parameters" element="tns:Removecontact" />
+  </wsdl:message>
+  <wsdl:message name="IContact_Removecontact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovecontactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContact_Updatecontact_InputMessage">
+    <wsdl:part name="parameters" element="tns:Updatecontact" />
+  </wsdl:message>
+  <wsdl:message name="IContact_Updatecontact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatecontactResponse" />
+  </wsdl:message>
   <wsdl:portType name="IContact">
     <wsdl:operation name="Contact">
       <wsdl:input wsaw:Action="http://tempuri.org/IContact/Contact" message="tns:IContact_Contact_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IContact/ContactResponse" message="tns:IContact_Contact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Removecontact">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContact/Removecontact" message="tns:IContact_Removecontact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContact/RemovecontactResponse" message="tns:IContact_Removecontact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Updatecontact">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContact/Updatecontact" message="tns:IContact_Updatecontact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContact/UpdatecontactResponse" message="tns:IContact_Updatecontact_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IContact" type="tns:IContact">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="Contact">
       <soap:operation soapAction="http://tempuri.org/IContact/Contact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Removecontact">
+      <soap:operation soapAction="http://tempuri.org/IContact/Removecontact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updatecontact">
+      <soap:operation soapAction="http://tempuri.org/IContact/Updatecontact" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -8,7 +8,7 @@
     <style>
         .background{
             background-image : url("Introbg2.jpg");
-            height:775px;
+            height:690px;
             background-size:cover;
 
         }

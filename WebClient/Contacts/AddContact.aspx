@@ -5,7 +5,20 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    
-    <div>
+    <style>
+         .jumbotron {
+            background-color: white;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        .background{
+            background-image : url("../Introbg2.jpg");
+            height:690px;
+            background-size:cover;
+       }
+    </style>
+
+    <div class="background">
         <div class="container-fluid text-center">
             <div class="row content">
                 <div class="col-md-4"></div>

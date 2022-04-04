@@ -26,9 +26,8 @@
 
        .background{
             background-image : url("../Introbg2.jpg");
-            height:690px;
+            height:610px;
             background-size:cover;
-
        }
        .jumbotron {
             padding-top: 20px;
@@ -64,16 +63,19 @@
         <br />
         <br />
 
-        <asp:GridView ID="GridView1" runat="server" Font-Size="Medium" GridLines = "None" HeaderStyle-CssClass="GridHeader" AutoGenerateColumns="False" CssClass="table table-responsive" DataKeyNames="id" DataSourceID="SqlDataSource1" AllowPaging="True" AllowSorting="True" RowStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center">
+        <asp:GridView ID="GridView1" runat="server" Font-Size="Medium" GridLines = "None" HeaderStyle-CssClass="GridHeader" AutoGenerateColumns="False" CssClass="table table-responsive" DataKeyNames="id" DataSourceID="SqlDataSource1" AllowPaging="True" AllowSorting="True" RowStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center" OnRowDeleting="Gridview_rowdeleting">
             <Columns>
                 <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" Visible="false" ReadOnly="True" SortExpression="id" />
-                <asp:BoundField DataField="Firstname" ItemStyle-HorizontalAlign="Center" HeaderText="Firstname" SortExpression="Firstname" />
+                <asp:BoundField DataField="Firstname" ItemStyle-HorizontalAlign="Center" HeaderText="Firstname" SortExpression="Firstname" >
+                <ItemStyle HorizontalAlign="Center"></ItemStyle>
+                </asp:BoundField>
+
                 <asp:BoundField DataField="Lastname" HeaderText="Lastname" SortExpression="Lastname" />
                 <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                 <asp:BoundField DataField="Label" HeaderText="Label" SortExpression="Label" />
                 <asp:BoundField DataField="ContactType" HeaderText="ContactType" SortExpression="ContactType" />
                 <asp:BoundField DataField="Mobileno" HeaderText="Mobileno" SortExpression="Mobileno" />
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                <asp:CommandField ButtonType="Button" ControlStyle-BackColor="#5cb85c" ShowDeleteButton="True" ShowHeader="True" ShowEditButton="True" />
             </Columns>
             <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
             <RowStyle HorizontalAlign="Center"></RowStyle>

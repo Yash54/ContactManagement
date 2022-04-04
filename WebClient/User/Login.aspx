@@ -36,11 +36,16 @@
         .navbar-inverse .navbar-brand {
             color: #5cb85c;
         }
+        .background{
+            background-image : url("../Introbg2.jpg");
+            height:690px;
+            background-size:cover;
+       }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="background">
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="navbar-header">

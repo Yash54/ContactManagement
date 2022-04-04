@@ -5,7 +5,18 @@
     <link href="AboutUs.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
+    <style>
+        .jumbotron {
+            background-color: white;
+            padding-top: 20px;
+            padding-bottom: 0px;
+        }
+        .background{
+            background-image : url("../Introbg2.jpg");
+            height:600px;
+            background-size:cover;
+       }
+    </style>
     
     <div class="background">
         <div class="container p-5">

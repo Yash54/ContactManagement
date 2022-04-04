@@ -13,6 +13,10 @@ namespace ContactManagement.User
     {
         [OperationContract]
         bool Contact(contact c);
+        [OperationContract]
+        bool Removecontact(int id);
+        [OperationContract]
+        bool Updatecontact(contact c);
     }
 
     [DataContract]

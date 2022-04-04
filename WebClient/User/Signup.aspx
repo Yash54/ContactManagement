@@ -37,11 +37,19 @@
             color: #5cb85c;
             
         }
+        .background{
+            background-image : url("../Introbg2.jpg");
+            height:740px;
+            background-size:cover;
+       }
+        .box{
+            padding-top:10px
+        }
     </style>
 </head>
 <body>
     <form id="form2" runat="server">
-        <div>
+        <div class="background">
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -51,7 +59,7 @@
                 </div>
             </nav>
             <div class="container-fluid text-center">
-                <div class="row content">
+                <div class="row content,box">
                     <div class="col-md-4"></div>
                     <div class="col-sm-4 text-center">
                         <br />

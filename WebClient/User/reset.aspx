@@ -37,11 +37,16 @@
             color: #5cb85c;
             
         }
+        .background{
+            background-image : url("../Introbg2.jpg");
+            height:710px;
+            background-size:cover;
+       }
     </style>
 </head>
 <body>
     <form id="form2" runat="server">
-        <div>
+        <div class="background">
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="navbar-header">

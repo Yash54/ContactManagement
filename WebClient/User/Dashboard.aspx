@@ -6,7 +6,7 @@
     <style>
         .jumbotron{
             background-color:white;
-            padding-top: 20px;
+            padding-top: 10px;
             padding-bottom: 0px;
         }
         .table{
@@ -46,7 +46,7 @@
         }
         .background{
             background-image : url("../Introbg2.jpg");
-            height:690px;
+            height:620px;
             background-size:cover;
 
        }

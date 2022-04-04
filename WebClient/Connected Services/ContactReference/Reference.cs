@@ -20,6 +20,18 @@ namespace WebClient.ContactReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContact/Contact", ReplyAction="http://tempuri.org/IContact/ContactResponse")]
         System.Threading.Tasks.Task<bool> ContactAsync(ContactManagement.User.contact c);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContact/Removecontact", ReplyAction="http://tempuri.org/IContact/RemovecontactResponse")]
+        bool Removecontact(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContact/Removecontact", ReplyAction="http://tempuri.org/IContact/RemovecontactResponse")]
+        System.Threading.Tasks.Task<bool> RemovecontactAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContact/Updatecontact", ReplyAction="http://tempuri.org/IContact/UpdatecontactResponse")]
+        bool Updatecontact(ContactManagement.User.contact c);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContact/Updatecontact", ReplyAction="http://tempuri.org/IContact/UpdatecontactResponse")]
+        System.Threading.Tasks.Task<bool> UpdatecontactAsync(ContactManagement.User.contact c);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +67,22 @@ namespace WebClient.ContactReference {
         
         public System.Threading.Tasks.Task<bool> ContactAsync(ContactManagement.User.contact c) {
             return base.Channel.ContactAsync(c);
+        }
+        
+        public bool Removecontact(int id) {
+            return base.Channel.Removecontact(id);
+        }
+        
+        public System.Threading.Tasks.Task<bool> RemovecontactAsync(int id) {
+            return base.Channel.RemovecontactAsync(id);
+        }
+        
+        public bool Updatecontact(ContactManagement.User.contact c) {
+            return base.Channel.Updatecontact(c);
+        }
+        
+        public System.Threading.Tasks.Task<bool> UpdatecontactAsync(ContactManagement.User.contact c) {
+            return base.Channel.UpdatecontactAsync(c);
         }
     }
 }
